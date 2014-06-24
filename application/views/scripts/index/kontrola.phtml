@@ -1,0 +1,21 @@
+<table>
+  <thead>
+    <tr>
+      <th>lp.</th>
+      <th>Imie</th>
+      <th>Nazwisko</th>
+      <th>Data</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php foreach ($this->kontrola as $k => $rfid): ?>
+    <tr>
+      <td><?php echo ($k + 1); ?>.</td>
+      <td><?php echo $rfid ?></td>
+      <td><?php echo $rfid->imie ?></td>
+      <td><?php echo $rfid->naziwsko ?></td>
+      <td><?php echo $rfid->data ?></td>
+    </tr>
+    <?php endforeach; ?>
+  </tbody>
+</table>

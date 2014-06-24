@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+  <head>
+      <title><?php echo $this->tytul ?></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl('css/style.css')?>" />
+    <!--<link rel="stylesheet" type="text/css" href="css/style.css" />-->
+    <!--<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />-->
+    <script type="text/javascript" src="<?php echo $this->baseUrl('js/jquery-1.9.1.js')?>"></script>
+    <script type="text/javascript" src="<?php echo $this->baseUrl('js/tempjavascript.js')?>"></script>
+    <script type="text/javascript" src="<?php echo $this->baseUrl('js/highcharts.js')?>"></script>
+    <script type="text/javascript" src="<?php echo $this->baseUrl('js/modules/exporting.js')?>"></script>
+  </head>
+
+    
+<body>
+   <div id="pojemnik">
+       <!--początek pojemnika-->
+       <div id="naglowek">
+           <h1></h1>
+       </div>
+       
+    <?php if ($this->identity): ?>
+    
+
+       
+       <div id="menu">
+           
+<!--            <a class="menu" href='/index/index'>Start</a><br />
+            <a class="menu" href='/index/kontrola'>2</a><br />
+            <a class="menu" href='/index/monitoring'>3</a><br />
+            <a class="menu" href='/index/temperatura'>4</a><br />-->
+       
+           
+           <a href="<?php echo $this->url(array(
+               'controller' => 'index',
+               'action' => 'index'
+               )) ?>">Start</a>
+           
+           <a href="<?php echo $this->url(array(
+               'controller' => 'index',
+               'action' => 'monitoring'
+               )) ?>">Monitoring</a>
+           
+           <a href="<?php echo $this->url(array(
+               'controller' => 'index',
+               'action' => 'temperatura'
+               )) ?>">Temperatura</a>
+           
+           <a href="<?php echo $this->url(array(
+               'controller' => 'index',
+               'action' => 'kontrola'
+               )) ?>">Kontrola wejść i wyjść</a>
+
+           <a href="<?php echo $this->url(array(
+               'controller' => 'autoryzacja',
+               'action' => 'wylogowanie'
+               )) ?>">Wyloguj</a>           
+       
+       
+   </div>
+    <!--koniec pojemnika-->
+    <?php endif; ?>
+    
+       
+       <div id="tresc">
+           <h1 id="logo">Tatry</h1>
+           <?php echo $this->layout()->content; ?>
+       </div>
+       
+       <div id="stopka">
+           
+       </div>
+    </div>
+</body>    
+    
+</html>
