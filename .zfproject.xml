@@ -33,10 +33,12 @@
           <dbTableFile dbTableName="DbUzytkownik"/>
           <dbTableFile dbTableName="DbRfid"/>
           <dbTableFile dbTableName="DbTemp"/>
+          <dbTableFile dbTableName="DbUserkontrola"/>
         </dbTableDirectory>
         <modelFile modelName="Uzytkownik"/>
         <modelFile modelName="Rfid"/>
         <modelFile modelName="Temperatura"/>
+        <modelFile modelName="Userkontrola"/>
       </modelsDirectory>
       <modulesDirectory enabled="false"/>
       <servicesDirectory enabled="false"/>

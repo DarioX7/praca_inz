@@ -43,7 +43,8 @@ class IndexController extends Zend_Controller_Action
 
     public function kontrolaAction()
     {
-        // action body
+        $zmienna1 = new Application_Model_DbTable_DbRfid();
+        $this->view->zmienna2 = $zmienna1->fetchAll();
     }
 
 
