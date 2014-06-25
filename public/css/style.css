@@ -64,3 +64,23 @@ html, body {
 #username-label, #password-label {
     font-size: 24px;
 }*/
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid black;
+    background: #e0effe;
+}
+
+td {
+    margin: 10px;
+    padding: 10px 40px;
+    border: 1px solid black;
+}
+th {
+    margin: 10px;
+    padding: 10px 40px;
+    border: 1px solid black;
+    background: #043362;
+    color: #e0effe;
+}
