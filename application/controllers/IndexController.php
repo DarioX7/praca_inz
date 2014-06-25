@@ -47,8 +47,15 @@ class IndexController extends Zend_Controller_Action
         $this->view->zmienna2 = $zmienna1->fetchAll();
     }
 
+    public function tempJsonAction()
+    {
+        // action body
+    }
+
 
 }
+
+
 
 
 

@@ -8,6 +8,7 @@
     <!--<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />-->
     <script type="text/javascript" src="<?php echo $this->baseUrl('js/jquery-1.9.1.js')?>"></script>
     <script type="text/javascript" src="<?php echo $this->baseUrl('js/tempjavascript.js')?>"></script>
+    <script type="text/javascript" src="<?php echo $this->baseUrl('js/tempall.js')?>"></script>
     <script type="text/javascript" src="<?php echo $this->baseUrl('js/highcharts.js')?>"></script>
     <script type="text/javascript" src="<?php echo $this->baseUrl('js/modules/exporting.js')?>"></script>
   </head>
@@ -16,61 +17,50 @@
 <body>
    <div id="pojemnik">
        <!--początek pojemnika-->
-       <div id="naglowek">
-           <h1></h1>
-       </div>
-       
     <?php if ($this->identity): ?>
-    
-
-       
-       <div id="menu">
-           
-<!--            <a class="menu" href='/index/index'>Start</a><br />
-            <a class="menu" href='/index/kontrola'>2</a><br />
-            <a class="menu" href='/index/monitoring'>3</a><br />
-            <a class="menu" href='/index/temperatura'>4</a><br />-->
-       
-           
+       <div class="menu">
            <a href="<?php echo $this->url(array(
                'controller' => 'index',
                'action' => 'index'
-               )) ?>">Start</a>
+               )) ?>"><span>Strona główna</span></a>
            
            <a href="<?php echo $this->url(array(
                'controller' => 'index',
                'action' => 'monitoring'
-               )) ?>">Monitoring</a>
+               )) ?>"><span>Monitoring</span></a>
            
            <a href="<?php echo $this->url(array(
                'controller' => 'index',
                'action' => 'temperatura'
-               )) ?>">Temperatura</a>
+               )) ?>"><span>Temperatura</span></a>
            
            <a href="<?php echo $this->url(array(
                'controller' => 'index',
                'action' => 'kontrola'
-               )) ?>">Kontrola wejść i wyjść</a>
+               )) ?>"><span>Kontrola wejść i wyjść</span></a>
 
-           <a href="<?php echo $this->url(array(
+           <a class="last" href="<?php echo $this->url(array(
                'controller' => 'autoryzacja',
                'action' => 'wylogowanie'
-               )) ?>">Wyloguj</a>           
+               )) ?>"><span>Wyloguj</span></a>           
        
        
    </div>
     <!--koniec pojemnika-->
     <?php endif; ?>
-    
-       
-       <div id="tresc">
-           <h1 id="logo">Tatry</h1>
+
+        <div class="header">
+            <h1><span>Praca inżynierska</span></h1>
+            <h2><span>Projekt systemu i monitoringu domu jednorodzinnego w oparciu o otwarte oprogramowanie i komercyjne urządzenia sieciowe</span></h2>
+        </div>
+        <div class="content">
            <?php echo $this->layout()->content; ?>
-       </div>
+        </div>
        
-       <div id="stopka">
-           
-       </div>
+        <div class="footer">
+            <span>Dariusz Haraf &#169</span>
+        </div>
+
     </div>
 </body>    
     
