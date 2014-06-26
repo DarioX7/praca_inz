@@ -188,3 +188,7 @@ th {
     background: #043362;
     color: #e0effe;
 }
+
+#webcam {
+    border-collapse: collapse;
+}

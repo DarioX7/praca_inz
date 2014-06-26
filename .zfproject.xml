@@ -12,7 +12,7 @@
           <actionMethod actionName="monitoring"/>
           <actionMethod actionName="temperatura"/>
           <actionMethod actionName="kontrola"/>
-          <actionMethod actionName="tempJson"/>
+          <actionMethod actionName="tempPokoj"/>
         </controllerFile>
         <controllerFile controllerName="Error"/>
         <controllerFile controllerName="Autoryzacja">
@@ -70,7 +70,7 @@
             <viewScriptFile forActionName="kontrola"/>
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Index">
-            <viewScriptFile forActionName="tempJson"/>
+            <viewScriptFile forActionName="tempPokoj"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>
@@ -113,7 +113,7 @@
             <testApplicationActionMethod forActionName="monitoring"/>
             <testApplicationActionMethod forActionName="temperatura"/>
             <testApplicationActionMethod forActionName="kontrola"/>
-            <testApplicationActionMethod forActionName="tempJson"/>
+            <testApplicationActionMethod forActionName="tempPokoj"/>
           </testApplicationControllerFile>
           <testApplicationControllerFile forControllerName="Autoryzacja">
             <testApplicationActionMethod forActionName="index"/>

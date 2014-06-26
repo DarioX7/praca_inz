@@ -1,6 +1,7 @@
 $(document).ready(function() {
     adres = "/index/temp-pokoj";
     $('select').change(function(event) {
+        alert();
         switch (event.target.value) {
             case "pokoj":
                 adres = "/index/temp-pokoj";
@@ -42,10 +43,7 @@ $(document).ready(function() {
                             }).done(function(data) {
                                 var x = (new Date()).getTime(); // current time
                                 series.addPoint([x, data[0]], true, true);
-                            }).fail(function(){
-                                var x = (new Date()).getTime(); // current time
-                                series.addPoint([x, null], true, true);
-                            });
+                            })
                         }, 3000);
                     }
                 }
@@ -88,4 +86,5 @@ $(document).ready(function() {
                 }]
         });
     });
+
 });

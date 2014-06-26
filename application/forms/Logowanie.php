@@ -32,7 +32,7 @@ class Application_Form_Logowanie extends Zend_Form
         
         $username = new Zend_Form_Element_Text(
                 'username',
-                array('label' => 'Login:',
+                array('placeholder' => 'Login',
                     'required' => true,
                     'filters'  => array('StringTrim', 'StringToLower'))
                 );
@@ -55,7 +55,7 @@ class Application_Form_Logowanie extends Zend_Form
 //------------------------------------------------------------------------------        
         $password = new Zend_Form_Element_Password(
                 'password',
-                array('label' => 'Hasło:'));
+                array('placeholder' => 'Hasło'));
 
         $password->addDecorator(
                 'HtmlTag',
